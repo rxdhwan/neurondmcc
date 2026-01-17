@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Neuron International DMCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Manrope', 'sans-serif'] },
+                    colors: {
+                        navy: { DEFAULT: '#002060', dark: '#0a1226' },
+                        gold: '#C5A017',
+                        offwhite: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-navy-dark bg-white h-screen flex flex-col">
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100 flex-none">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-navy text-white rounded flex items-center justify-center"><i class="fa-solid fa-atom text-xl"></i></div>
+                <h1 class="text-2xl font-extrabold text-navy tracking-tight">NEURON</h1>
+            </a>
+            <div class="hidden md:flex gap-6 font-semibold text-sm text-gray-600">
+                <a href="index.html" class="hover:text-navy transition">Home</a>
+                <a href="about.html" class="hover:text-navy transition">About Us</a>
+                <a href="products.html" class="hover:text-navy transition">Products</a>
+                <a href="suppliers.html" class="hover:text-navy transition">Suppliers</a>
+                <a href="careers.html" class="hover:text-navy transition">Careers</a>
+            </div>
+            <a href="contact.html" class="px-6 py-2 bg-navy text-white font-bold rounded shadow-lg shadow-navy/20">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="flex-grow flex flex-col md:flex-row h-full">
+        
+        <div class="md:w-1/2 p-12 md:p-20 bg-offwhite flex flex-col justify-center">
+            <div data-aos="fade-right">
+                <h4 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">Get in Touch</h4>
+                <h1 class="text-4xl font-bold text-navy mb-8">Contact Information</h1>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded shadow-sm flex items-center justify-center text-navy shrink-0"><i class="fa-solid fa-location-dot text-xl"></i></div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg">Headquarters</h3>
+                            <p class="text-gray-600">Almas Tower, Office 20-D<br>Jumeirah Lakes Towers (JLT)<br>Dubai, United Arab Emirates</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded shadow-sm flex items-center justify-center text-navy shrink-0"><i class="fa-solid fa-phone text-xl"></i></div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg">Phone</h3>
+                            <p class="text-gray-600">+971 54 384 9539</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded shadow-sm flex items-center justify-center text-navy shrink-0"><i class="fa-solid fa-envelope text-xl"></i></div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg">Email</h3>
+                            <a href="mailto:manager@neurondmcc.com" class="text-blue-600 hover:text-navy underline">manager@neurondmcc.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 relative bg-gray-200 min-h-[400px]">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.886475664797!2d55.13876067605443!3d25.071850736786634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6caee5773209%3A0xe5a7d66020583769!2sAlmas%20Tower!5e0!3m2!1sen!2sae!4v1709400000000!5m2!1sen!2sae" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 800, once: true }); </script>
+</body>
+</html>
